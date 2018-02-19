@@ -1,0 +1,8 @@
+{
+  "name": "Ion3-first-restructureApp",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
