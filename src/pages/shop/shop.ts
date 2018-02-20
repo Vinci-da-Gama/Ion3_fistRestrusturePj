@@ -1,24 +1,23 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ShopPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { BuyoutPage } from '../buyOut/buyout';
 
 @Component({
-  selector: 'page-shop',
-  templateUrl: 'shop.html',
+	selector: 'page-shop',
+	templateUrl: 'shop.html',
 })
 export class ShopPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	constructor(
+		private navCtrl: NavController
+	) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ShopPage');
-  }
+	ionViewDidLoad() {
+		console.log('ionViewDidLoad ShopPage');
+	}
+
+	GoBuyout() {
+		this.navCtrl.push(BuyoutPage);
+	}
 
 }
