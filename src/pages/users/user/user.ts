@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
 	selector: 'page-user',
-	templateUrl: 'user.html',
+	templateUrl: 'user.html'
 })
 export class UserPage implements OnInit {
 	private name: String = '';
