@@ -6,7 +6,12 @@
 
 
 <ion-content padding>
-    <button ion-button (click)="GoBuyout()">
+    <ion-list>
+        <button ion-item *ngFor="let pd of pdList" (click)="onGoToBuyout(pd)">
+            {{ pd.name }}
+        </button>
+    </ion-list>
+    <!-- <button ion-button (click)="GoBuyout()">
         Go Buyout
-    </button>
+    </button> -->
 </ion-content>
