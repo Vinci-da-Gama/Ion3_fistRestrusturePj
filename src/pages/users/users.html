@@ -1,24 +1,23 @@
 <ion-header>
-    <ion-navbar>
-        <ion-title>users</ion-title>
-    </ion-navbar>
+	<ion-navbar>
+		<ion-title>users</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    This is users page.
-    <ion-buttons end>
-        <button ion-button (click)="checkUser('Max')">
-            check Max
-        </button>
-        <button ion-button (click)="checkUser('Matt')">
-            check Matt
-        </button>
-    </ion-buttons>
-    <button ion-button (click)="GoBackHome()">
-        Back Home
-    </button>
+	This is users page.
+	<ion-buttons end>
+		<button ion-button (click)="checkUser('Max')">
+			check Max
+		</button>
+		<button ion-button (click)="checkUser('Matt')">
+			check Matt
+		</button>
+	</ion-buttons>
+	<!-- (click)="GoBackHome()" -->
+	<button ion-button navPop>Back Home</button>
 </ion-content>
 
 <ion-footer>
-    This is user Footer...
+	This is user Footer...
 </ion-footer>

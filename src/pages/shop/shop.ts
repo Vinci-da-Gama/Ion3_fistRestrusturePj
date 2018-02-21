@@ -35,8 +35,44 @@ export class ShopPage {
 			});
 	}
 
+	ionViewCanEnter(): boolean | Promise<boolean> {
+		const rnd = Math.random();
+		console.log('40 -- ionViewCanEnter: ', rnd);
+		return rnd > 0.6;
+	}
+
 	ionViewDidLoad() {
-		console.log('ionViewDidLoad ShopPage');
+		console.log('45 -- ionViewDidLoad ShopPage');
+	}
+
+	ionViewWillEnter() {
+		console.log('49 -- ionViewWillEnter ShopPage');
+	}
+
+	ionViewDidEnter() {
+		console.log('53 -- ionViewWillEnter ShopPage');
+	}
+
+	ionViewCanLeave(): boolean | Promise<object> {
+		console.log('57 -- ionViewCanLeave ShopPage');
+		const promise = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve();
+			}, 1000);
+		});
+		return promise;
+	}
+
+	ionViewWillLeave() {
+		console.log('67 -- ionViewWillLeave ShopPage');
+	}
+
+	ionViewDidLeave() {
+		console.log('71 -- ionViewDidLeave ShopPage');
+	}
+
+	ionViewWillUnload() {
+		console.log('75 -- ionViewWillUnload ShopPage');
 	}
 
 	// GoBuyout() {

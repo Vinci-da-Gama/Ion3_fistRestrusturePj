@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { HomePage } from '../home/home';
 import { UserPage } from './user/user';
 
 @Component({
@@ -19,9 +18,9 @@ export class UsersPage {
 		console.log('ionViewDidLoad UsersPage');
 	}
 
-	GoBackHome() {
+	/* GoBackHome() {
 		this.navCtrl.push(HomePage);
-	}
+	} */
 
 	checkUser(name: string) {
 		console.log('27 -- ', name);
