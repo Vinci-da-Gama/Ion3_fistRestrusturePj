@@ -13,32 +13,32 @@ import { ShopPage } from '../pages/shop/shop';
 import { BuyoutPage } from '../pages/buyOut/buyout';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    HomePage,
-    UsersPage,
-    UserPage,
-    ShopPage,
-    BuyoutPage
-  ],
-  imports: [
-    BrowserModule,
-    HttpModule,
-    IonicModule.forRoot(MyApp)
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage,
-    UsersPage,
-    UserPage,
-    ShopPage,
-    BuyoutPage
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
-  ]
+	declarations: [
+		MyApp,
+		HomePage,
+		UsersPage,
+		UserPage,
+		ShopPage,
+		BuyoutPage
+	],
+	imports: [
+		BrowserModule,
+		HttpModule,
+		IonicModule.forRoot(MyApp)
+	],
+	bootstrap: [IonicApp],
+	entryComponents: [
+		MyApp,
+		HomePage,
+		UsersPage,
+		UserPage,
+		ShopPage,
+		BuyoutPage
+	],
+	providers: [
+		StatusBar,
+		SplashScreen,
+		{ provide: ErrorHandler, useClass: IonicErrorHandler }
+	]
 })
 export class AppModule { }

@@ -1,21 +1,22 @@
 <ion-header>
-    <ion-navbar>
-        <ion-title>
-            Ionic-s1-s2
-        </ion-title>
-    </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			Ionic-s1-s2
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    The world is your oyster.
-    <p>
-        If you get lost, the
-        <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-    </p>
-    <button ion-button block (click)="GoToUsersPage()">
-        Go Users
-    </button>
-    <button ion-button block color="dark" (click)="GoToShop()">
-        Go Shop
-    </button>
+	The world is your oyster.
+	<p>
+		If you get lost, the
+		<a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+	</p>
+	<!-- (click)="GoToUsersPage()" -->
+	<button ion-button block [navPush]="TheUsersPage">
+		Go Users
+	</button>
+	<button ion-button block color="dark" (click)="GoToShop()">
+		Go Shop
+	</button>
 </ion-content>

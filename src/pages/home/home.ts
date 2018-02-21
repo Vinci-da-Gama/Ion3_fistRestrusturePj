@@ -9,13 +9,17 @@ import { ShopPage } from '../shop/shop';
 })
 export class HomePage {
 
+	private TheUsersPage: any;
+
 	constructor(
 		private navCtrl: NavController
-	) { }
-
-	GoToUsersPage() {
-		this.navCtrl.push(UsersPage);
+	) {
+		this.TheUsersPage = UsersPage;
 	}
+
+	/* GoToUsersPage() {
+		this.navCtrl.push(UsersPage);
+	} */
 
 	GoToShop() {
 		this.navCtrl.push(ShopPage);
